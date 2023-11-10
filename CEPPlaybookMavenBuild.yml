@@ -6,8 +6,6 @@
     loop:
      - git
      - maven
-  - name: Clone the code on the worker nodes from github
-    git: repo=https://github.com/akshu20791/DevOpsClassCodes.git dest=/tmp/test
   - name: Clone the code 
     git: repo=https://github.com/eibay/simple-java-maven-app dest=/tmp/eibay
   - name: Execute maven command to build the code
