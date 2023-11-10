@@ -8,9 +8,8 @@
      - maven
   - name: Clone the code on the worker nodes from github
     git: repo=https://github.com/akshu20791/DevOpsClassCodes.git dest=/tmp/test
+  - name: Clone the code 
+    git: repo=https://github.com/eibay/DevOpsCodeDemo dest=/tmp/eibay
   - name: Execute maven command to build the code
-      - name: Clone the code on the worker nodes from github
-    git: repo=https://github.com/Sonal0409/DevOpsCodeDemo.git dest=/tmp/akshat
-  - name: Execute maven command to build the code
-    command: chdir=/tmp/akshat mvn package
+    command: chdir=/tmp/eibay mvn package
     
