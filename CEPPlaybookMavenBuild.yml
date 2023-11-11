@@ -5,7 +5,7 @@
     package: name={{item}} state=latest
     loop:
      - git
-     - maven
+     - maven_version: '3.9.4'
   - name: Clone the code 
     git: repo=https://github.com/eibay/simple-java-maven-app dest=/tmp/eibay
   - name: Execute maven command to build the code
