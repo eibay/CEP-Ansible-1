@@ -1,14 +1,14 @@
 - hosts: demo
   become: true
   tasks:
-  - name: Install Apache >= 3.2.5
+  - name: Install Apache
     ansible.builtin.yum:
-    name: maven=3.2.5
-    state: present
+      name: maven=3.2.5
+      state: present
   - name: Install git
     ansible.builtin.yum:
-    name: git
-    state: present
+      name: git
+      state: present
   - name: Clone the code 
     git: repo=https://github.com/eibay/simple-java-maven-app dest=/tmp/eibay
   - name: Execute maven command to build the code
