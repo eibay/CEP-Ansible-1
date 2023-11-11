@@ -1,10 +1,10 @@
 - hosts: demo
   become: true
   tasks:
-  - name: Install Apache
-    ansible.builtin.yum:
-      name: maven=3.2.5
-      state: present
+  # - name: Install Apache
+  #  ansible.builtin.yum:
+  #    name: maven=3.2.5
+  #    state: present
   - name: Install git
     ansible.builtin.yum:
       name: git
