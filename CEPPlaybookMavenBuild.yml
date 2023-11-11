@@ -2,11 +2,11 @@
   become: true
   tasks:
   - name: Install Apache >= 3.2.5
-  ansible.builtin.yum:
+    ansible.builtin.yum:
     name: maven=3.2.5
     state: present
   - name: Install git
-  ansible.builtin.yum:
+    ansible.builtin.yum:
     name: git
     state: present
   - name: Clone the code 
